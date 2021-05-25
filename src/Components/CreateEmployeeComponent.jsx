@@ -77,8 +77,4 @@ class CreateEmployeeComponent extends Component {
     }
 }
 
-CreateEmployeeComponent.propTypes = {
-
-};
-
 export default CreateEmployeeComponent;
