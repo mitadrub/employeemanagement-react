@@ -20,13 +20,16 @@ class ViewEmployeeComponent extends Component {
             <div>
                 <br></br>
                 <div className="card col-md-6 offset-md-3">
-                    <h3 className="text-center">View Employee Details</h3>
+                    <h3 className="text-center">Employee Details</h3>
                     <div className="card-body">
                         <div className="row">
-                            <label>Employee Name: {this.state.employee.firstName} {this.state.employee.lastName}</label>
+                            <label><b>Employee Name: </b>{this.state.employee.firstName} {this.state.employee.lastName}</label>
                         </div>
                         <div className="row">
-                            <label>Email Id: {this.state.employee.emailId}</label>
+                            <label><b>Employee Id: </b>{this.state.employee.id}</label>
+                        </div>
+                        <div className="row">
+                            <label><b>Email Id: </b>{this.state.employee.emailId}</label>
                         </div>
                     </div>
                 </div>
