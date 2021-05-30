@@ -98,7 +98,7 @@ class CreateEmployeeComponent extends Component {
                                 </div>
                                 <div className="form-group">
                                     <label>Email Id: </label>
-                                    <input placeholder="Email Id" name="emailId" className="form-control"
+                                    <input placeholder="abc@xyz.com" name="emailId" className="form-control"
                                         value={this.state.emailId} onChange={this.changeEmailIdHandler}></input>
                                 </div>
                                 
