@@ -42,6 +42,7 @@ class ViewEmployeeComponent extends Component {
                             <label><b>Age:</b>{this.state.employee.age}</label>
                         </div>
                         <button onClick={ () => this.editEmployee(this.state.employee.id)} className="btn btn-info">Update</button>
+                        <div><a href="http://localhost:3000/employee" className="navbar-brand">Get back to employee list page</a></div>
                     </div>
                 </div>
             </div>
