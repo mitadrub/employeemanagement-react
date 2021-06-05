@@ -9,11 +9,15 @@ class ViewEmployeeComponent extends Component {
             id: this.props.match.params.id,
             employee: {}
         }
+        this.editEmployee = this.editEmployee.bind(this)
     }
     componentDidMount(){
         EmployeeService.getEmployeeById(this.state.id).then(res => {
             this.setState({employee: res.data})
         })
+    }
+    editEmployee(id){
+        this.props.history.push(`/add-employee/${id}`);
     }
     render() {
         return (
@@ -37,6 +41,7 @@ class ViewEmployeeComponent extends Component {
                         <div className="row">
                             <label><b>Age:</b>{this.state.employee.age}</label>
                         </div>
+                        <button onClick={ () => this.editEmployee(this.state.employee.id)} className="btn btn-info">Update</button>
                     </div>
                 </div>
             </div>
