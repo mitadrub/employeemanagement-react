@@ -31,6 +31,12 @@ class ViewEmployeeComponent extends Component {
                         <div className="row">
                             <label><b>Email Id: </b>{this.state.employee.emailId}</label>
                         </div>
+                        <div className="row">
+                            <label><b>Date of birth(yy-mm-dd): </b>{this.state.employee.dateOfBirth}</label>
+                        </div>
+                        <div className="row">
+                            <label><b>Age:</b>{this.state.employee.age}</label>
+                        </div>
                     </div>
                 </div>
             </div>
