@@ -10,8 +10,8 @@ class HomePage extends PureComponent {
     render() {
         return (
             <div>
-                <h1 class="text-lg-center">Welcome To Employee Manager</h1>
-                <div class="text-lg-center">Click below button to get the employee list</div>
+                <h1 className="text-lg-center">Welcome To Employee Manager</h1>
+                <div className="text-lg-center">Click below button to get the employee list</div>
                 <div className="text-lg-center">
                     <button className="btn btn-primary" onClick={this.goToEmployeeList.bind(this)}>Get Employee</button>
                 </div>
